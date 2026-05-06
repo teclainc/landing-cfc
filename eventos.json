@@ -1,0 +1,31 @@
+[
+  {
+    "id": "evt-encuentro-mujeres-2026",
+    "title": "Encuentro de Mujeres",
+    "description": "",
+    "starts_at": "2026-05-01T19:30:00-03:00",
+    "ends_at": "2026-05-03T23:59:00-03:00",
+    "location": "Quinta CFC",
+    "type": "special",
+    "contact_url": "https://wa.me/5491149392253"
+  },
+  {
+    "id": "evt-viaje-salta-2026",
+    "title": "Misioneros Unidos: Viaje a Salta",
+    "description": "",
+    "starts_at": "2026-06-05T00:00:00-03:00",
+    "ends_at": "2026-06-14T23:59:00-03:00",
+    "location": "Tartagal / Santa Victoria Este, Salta",
+    "type": "missions",
+    "contact_url": "https://wa.me/5491156334578"
+  },
+  {
+    "id": "evt-congreso-crece-2026",
+    "title": "Congreso: CRECE",
+    "description": "",
+    "starts_at": "2026-06-19T00:00:00-03:00",
+    "ends_at": "2026-06-20T23:59:00-03:00",
+    "location": "Auditorio CFC Casanova",
+    "type": "special"
+  }
+]
