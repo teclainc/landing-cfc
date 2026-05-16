@@ -40,6 +40,8 @@
 					<input type="tel" id="or-telefono" placeholder="Número de teléfono">
 					<input type="email" id="or-email" placeholder="Mail (Opcional)">
 					<textarea id="or-mensaje" rows="5" placeholder="Escribí tu pedido acá..." required></textarea>
+					<!-- Honeypot anti-bot: debe quedar vacío, los bots lo completan -->
+    				<input type="text" id="or-hp" name="_hp" style="display:none" tabindex="-1" autocomplete="off" value="">
                     
 					<button type="submit" class="btn-submit" id="btn-oracion">Enviar Pedido</button>
 				</form>
@@ -62,7 +64,8 @@
 								telefono: document.getElementById('or-telefono').value,
 								email: document.getElementById('or-email').value,
 								mensaje: document.getElementById('or-mensaje').value,
-								church_slug: 'cfc'
+								church_slug: 'cfc',
+								_hp: document.getElementById('or-hp').value
 							})
 						});
 						if (res.ok) {
