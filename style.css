@@ -470,6 +470,7 @@ input:focus, textarea:focus, select:focus {
 
 /* --- TARJETA DE HORARIOS (PC y Móvil) --- */
 .nuevo-horarios {
+    grid-column: 1 / -1;
     background-color: var(--rojo-ui);
     color: var(--blanco);
     padding: 25px; /* Reducido para ser más compacto */
