@@ -82,3 +82,14 @@ if (menuToggle) {
         }
     });
 }
+
+// 5. Scroll reveal: anima elementos al entrar en viewport
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal-on-scroll').forEach(el => revealObserver.observe(el));
