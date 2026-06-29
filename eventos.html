@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFC - Eventos</title>
+    <title>Eventos | CFC Casanova | Próximas Actividades</title>
+    <meta name="description" content="Agendá los próximos eventos del Centro Familiar Cristiano Casanova. Encuentros, congresos, viajes misioneros y más actividades para toda la familia.">
+    <link rel="canonical" href="https://cfccasanova.com/eventos.html">
+    <meta property="og:title" content="Eventos | CFC Casanova | Próximas Actividades">
+    <meta property="og:description" content="Encuentros, congresos, viajes misioneros. Sumate a la familia CFC.">
+    <meta property="og:image" content="https://cfccasanova.com/logo.png">
+    <meta property="og:url" content="https://cfccasanova.com/eventos.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Eventos | CFC Casanova">
+    <meta name="twitter:description" content="Próximas actividades del CFC. ¡Sumate!">
+    <meta name="twitter:image" content="https://cfccasanova.com/logo.png">
     
     <link rel="icon" href="logo.png">
     <link rel="stylesheet" href="./style.css">
@@ -27,13 +38,19 @@
         <p>Agendá nuestras actividades destacadas y sumate a la familia.</p>
     </section>
 
+    <nav aria-label="Breadcrumb" class="breadcrumb">
+        <a href="/">Inicio</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Eventos</span>
+    </nav>
+
     <section class="eventos-container" style="padding-top: 20px;">
         
         <div class="grilla-eventos">
             
             <div class="evento-card-elevation fade-in delay">
                 <div class="evento-imagen-wrapper">
-                    <img src="img/events/encuentro-mujeres.jpg" alt="Encuentro de Mujeres" style="background-color: #e4e4e7;">
+                    <img src="img/events/encuentro-mujeres.jpg" alt="Encuentro de Mujeres" width="960" height="540" loading="lazy" style="background-color: #e4e4e7;">
                 </div>
                 <div class="evento-cuerpo">
                     <div class="evento-meta">
@@ -47,7 +64,7 @@
 
 			<div class="evento-card-elevation fade-in delay">
                 <div class="evento-imagen-wrapper">
-                    <img src="img/events/Salta.jpg" alt="Misioneros Unidos: Viaje a Salta" style="background-color: #e4e4e7;">
+                    <img src="img/events/Salta.jpg" alt="Misioneros Unidos: Viaje a Salta" width="960" height="540" loading="lazy" style="background-color: #e4e4e7;">
                 </div>
                 <div class="evento-cuerpo">
                     <div class="evento-meta">
@@ -61,7 +78,7 @@
             
 			<div class="evento-card-elevation fade-in delay">
                 <div class="evento-imagen-wrapper">
-                    <img src="img/events/crece.jpg" alt="Congreso: CRECE" style="background-color: #e4e4e7;">
+                    <img src="img/events/crece.jpg" alt="Congreso: CRECE" width="960" height="540" loading="lazy" style="background-color: #e4e4e7;">
                 </div>
                 <div class="evento-cuerpo">
                     <div class="evento-meta">
@@ -76,6 +93,17 @@
     </section>
 
     </main>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cfccasanova.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Eventos", "item": "https://cfccasanova.com/eventos.html" }
+        ]
+    }
+    </script>
 
     <div id="footer-contenedor"></div>
 

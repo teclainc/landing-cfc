@@ -37,6 +37,32 @@ const footerHTML = `
 document.getElementById('menu-contenedor').innerHTML = menuHTML;
 document.getElementById('footer-contenedor').innerHTML = footerHTML;
 
+// 3b. Structured data Organization (JSON-LD)
+const jsonLdOrg = document.createElement('script');
+jsonLdOrg.type = 'application/ld+json';
+jsonLdOrg.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Centro Familiar Cristiano Casanova",
+    "alternateName": "CFC Casanova",
+    "url": "https://cfccasanova.com",
+    "logo": "https://cfccasanova.com/logo.png",
+    "description": "Iglesia evangélica con más de 50 años de trayectoria y una comunidad de más de 2500 personas en Isidro Casanova.",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Juan Manuel de Rosas 7840",
+        "addressLocality": "Isidro Casanova",
+        "addressRegion": "Buenos Aires",
+        "addressCountry": "AR"
+    },
+    "sameAs": [
+        "https://instagram.com/cfc.casanova",
+        "https://facebook.com/cfc.casanova",
+        "https://youtube.com/@cfc.casanova"
+    ]
+});
+document.head.appendChild(jsonLdOrg);
+
 // 4. Activamos el botón del menú para celulares (click + teclado)
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');

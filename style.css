@@ -53,6 +53,17 @@ h1, h2, h3 {
     }
 }
 
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 /* =========================================
    3. NAVEGACIÓN (Glassmorphism Claro)
    ========================================= */
@@ -325,6 +336,44 @@ h1, h2, h3 {
 }
 
 /* =========================================
+   6.5. BREADCRUMB NAVIGATION
+   ========================================= */
+.breadcrumb {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 5% 0;
+    font-size: 0.9rem;
+    color: var(--texto-secundario);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.breadcrumb a {
+    color: var(--texto-secundario);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    color: var(--rojo-ui);
+}
+
+.breadcrumb [aria-hidden="true"] {
+    color: #a1a1aa;
+    user-select: none;
+}
+
+.breadcrumb [aria-current="page"] {
+    color: var(--texto-principal);
+    font-weight: 500;
+}
+
+.breadcrumb + .seccion-principal {
+    padding-top: 20px;
+}
+
+/* =========================================
    7. UTILIDADES GLOBALES (Tarjetas modernas)
    ========================================= */
 .card-moderna {
@@ -367,7 +416,7 @@ h1, h2, h3 {
     align-items: stretch;
 }
 
-.formulario-box h2, .mapa-container h3 {
+.formulario-box h2, .mapa-container h2 {
     font-size: 2.2rem;
     margin-bottom: 15px;
     color: var(--texto-principal);
@@ -429,6 +478,16 @@ input:focus, textarea:focus, select:focus {
     box-shadow: 0 0 0 4px rgba(217, 45, 50, 0.08);
 }
 
+:focus:not(:focus-visible) {
+    outline: none;
+}
+
+:focus-visible {
+    outline: 2px solid var(--rojo-ui);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
 .btn-submit {
     background: var(--rojo-ui);
     color: var(--blanco);
@@ -486,7 +545,7 @@ input:focus, textarea:focus, select:focus {
     transform: translateY(-5px);
 }
 
-.nuevo-horarios h3 {
+.nuevo-horarios h2 {
     color: var(--blanco);
     margin-bottom: 15px; /* Menos espacio de separación */
     font-size: 1.5rem; /* Letra un poco más chica */
@@ -988,6 +1047,14 @@ input:focus, textarea:focus, select:focus {
 
     .carrusel-container { height: 300px; }
     .carrusel-btn { width: 40px; height: 40px; }
+
+    .menu-toggle {
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 /* Fix hero: fondo oscuro de respaldo si la imagen no carga */
