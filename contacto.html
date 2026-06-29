@@ -13,6 +13,7 @@
 
    <div id="menu-contenedor"></div>
 
+	<main id="main-content">
 		<section class="page-header fade-in" style="background-image: url('img/5.jpg');">
 			<h1>Contacto y Oración</h1>
 			<p>Estamos para acompañarte. Dejanos tu pedido de oración o conectá con nosotros.</p>
@@ -34,11 +35,16 @@
                 
 				<form id="form-oracion">
 					<div class="input-row">
+						<label for="or-nombre" class="visually-hidden">Nombre</label>
 						<input type="text" id="or-nombre" placeholder="Nombre" required>
+						<label for="or-apellido" class="visually-hidden">Apellido</label>
 						<input type="text" id="or-apellido" placeholder="Apellido">
 					</div>
+					<label for="or-telefono" class="visually-hidden">Número de teléfono</label>
 					<input type="tel" id="or-telefono" placeholder="Número de teléfono">
+					<label for="or-email" class="visually-hidden">Mail (Opcional)</label>
 					<input type="email" id="or-email" placeholder="Mail (Opcional)">
+					<label for="or-mensaje" class="visually-hidden">Escribí tu pedido acá</label>
 					<textarea id="or-mensaje" rows="5" placeholder="Escribí tu pedido acá..." required></textarea>
 					<!-- Honeypot anti-bot: debe quedar vacío, los bots lo completan -->
     				<input type="text" id="or-hp" name="_hp" style="display:none" tabindex="-1" autocomplete="off" value="">
@@ -94,21 +100,21 @@
 				<ul class="redes-lista">
 					<li>
 						<a href="https://instagram.com/cfc.casanova" target="_blank">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
 							Instagram (@cfc.casanova)
 						</a>
 					</li>
                     
 					<li>
 						<a href="https://facebook.com/cfc.casanova" target="_blank">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
 							Facebook (@cfc.casanova)
 						</a>
 					</li>
                     
 					<li>
 						<a href="https://youtube.com/@cfc.casanova" target="_blank">
-							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
 							YouTube (@cfc.casanova)
 						</a>
 					</li>
@@ -117,6 +123,8 @@
 
 		</div>
 	</section>
+
+	</main>
 
 	<div id="footer-contenedor"></div>
 

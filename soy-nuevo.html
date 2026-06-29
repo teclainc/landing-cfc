@@ -13,6 +13,7 @@
 
 	<div id="menu-contenedor"></div>
 
+	<main id="main-content">
 	<section class="page-header fade-in" style="background-image: url('img/1.jpg');">
 		<h1>Bienvenido a Casa</h1>
 		<p>Conocé nuestra historia y prepará tu primera visita.</p>
@@ -37,11 +38,16 @@
 						<p>Dejanos tus datos y un miembro de nuestra familia te escribirá.</p>
 						
 						<form id="soy-nuevo-form">
-							<input type="text" name="nombre" placeholder="Nombre y Apellido" required>
-							<input type="text" name="tel" placeholder="WhatsApp / Teléfono" required>
-							<input type="text" name="barrio" placeholder="Barrio / Localidad" required>
-							<input type="number" name="edad" placeholder="Edad" required>
-							<select name="estado" required>
+							<label for="sn-nombre" class="visually-hidden">Nombre y Apellido</label>
+							<input type="text" id="sn-nombre" name="nombre" placeholder="Nombre y Apellido" required>
+							<label for="sn-tel" class="visually-hidden">WhatsApp / Teléfono</label>
+							<input type="text" id="sn-tel" name="tel" placeholder="WhatsApp / Teléfono" required>
+							<label for="sn-barrio" class="visually-hidden">Barrio / Localidad</label>
+							<input type="text" id="sn-barrio" name="barrio" placeholder="Barrio / Localidad" required>
+							<label for="sn-edad" class="visually-hidden">Edad</label>
+							<input type="number" id="sn-edad" name="edad" placeholder="Edad" required>
+							<label for="sn-estado" class="visually-hidden">Estado Civil</label>
+							<select id="sn-estado" name="estado" required>
 								<option value="" disabled selected>Estado Civil</option>
 								<option value="Soltero/a">Soltero/a</option>
 								<option value="Casado/a">Casado/a</option>
@@ -75,6 +81,8 @@
 			</div>
 		</div>
 	</section>
+
+	</main>
 
 	<div id="footer-contenedor"></div>
 
